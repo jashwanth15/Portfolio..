@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASHWANTH's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de4ee47533.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body">
+        <header>
+            <h1 class="logo">JASHWANTH</h1>
+            <nav class="navbar">
+                <ul>
+                    <li  class="active">
+                        <a href="#home">
+                            <span class="icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="name">HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <span class="name">ABOUT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="icon"><i class="fa-solid fa-id-card-clip"></i></span>
+                            <span class="name">CONTACT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resume">
+                            <span onclick="res()" class="icon"><i class="fa-solid fa-file"></i></span>
+                            <span onclick="res()">RESUME</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            function res()
+            {
+               window.open("https://drive.google.com/file/d/1tjXU8q8ebboZDHl00b6PQL8ehMe1itvp/view?usp=sharing")
+            }
+        </script>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-card fade-in">
+                <div class="hero-img">
+                    <img src="img1.jpeg">
+                </div>
+                <div class="hero-details">
+                    <h1 class="hero-title">JASHWANTH</h1>
+                    <h2 class="hero-role">Full Stack Web Developer</h2>
+                    <p class="hero-summary">Versatile Full Stack Web Developer skilled in designing, developing, and deploying robust web applications. Proficient in both frontend and backend technologies, including HTML, CSS, JavaScript, React, Node.js, Express, and database management. Experienced in building responsive user interfaces and integrating modern frameworks to deliver seamless user experiences. Adept at problem-solving, collaborating in agile teams, and delivering scalable solutions from concept to deployment.</p>
+                    <div class="hero-buttons">
+                    </div>
+                    <div class="hero-socials">
+                        <i onclick="linkedin()" class="fa-brands fa-linkedin"></i>
+                        <i onclick="instagram()" class="fa-brands fa-instagram"></i>
+                        <i onclick="git()" class="fa-brands fa-square-github"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function linkedin(){
+                window.open("https://www.linkedin.com/in/jashwanth-lavudya-228a67291/")
+            }
+            function instagram(){
+                window.open("https://www.instagram.com/jashwanth_.21/")
+            }
+            function git(){
+                window.open("https://github.com/jashwanth15")
+            }
+        </script>
+        <!-- Skills Section -->
+        <section id="about" class="section fade-in">
+            <div class="container skills-container">
+                <h1 class="section-title">Skills</h1>
+                <div class="skills-grid">
+                    <div class="card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                    <div class="card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                    <div class="card"><i class="fa-brands fa-react"></i><span>React</span></div>
+                    <div class="card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+                    <div class="card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                    <div class="card"><i class="fa-solid fa-database"></i><span>Databases</span></div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="section fade-in" id="contact">
+            <div class="container contact-container">
+                <h1 class="section-title">Contact</h1>
+                <form action="#" class="form">
+                    <div class="email">
+                        <p>Email: jashwanthlavudya2004@gmail.com</p>
+                    </div>
+                    <div class="mobile">
+                        Phone No:+91 9381583441
+                    </div>
+                    <div class="description">
+                        <p>Description: I am passionate about building end-to-end web solutions. With proficiency in frontend (HTML, CSS, JavaScript, React) and backend (Node.js, Express, Python, Java, SQL/NoSQL databases), I deliver scalable and efficient web applications. My strong analytical and problem-solving skills drive me to continuously learn and master new technologies in the ever-evolving field of web development.</p>
+                    </div>
+                    <div class="contact-socials">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script>
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+            });
+        });
+    });
+        </script>
+    </div>
+</body>
+</html>
